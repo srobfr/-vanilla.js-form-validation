@@ -1,5 +1,9 @@
 # -vanilla.js-form-validation
 
+Here's a live preview: https://yewhral.github.io/-vanilla.js-form-validation/
+Here's a screenshot: http://i.imgur.com/QWvi4Aq.jpg
+
+
 This was one of a test projects that I got to do while looking for a job.
 As nothing indicates what company gave me this task and they are changing recruitment tasks every time anyway - I am putting it here on GitHub.
 
