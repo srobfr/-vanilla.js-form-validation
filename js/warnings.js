@@ -1,6 +1,6 @@
 function createBubble(text) {                       // creates a popup bubble that shows up after failed validaiton
-    const bubble = document.createElement('div');
-    const parent =  document.getElementById("bubble_holder");
+    const bubble = document.createElement('div'),
+        parent =  document.getElementById("bubble_holder");
     bubble.innerHTML = text;
     bubble.setAttribute('class', 'message_bubble');
     if(text.length <= 45) {
@@ -18,8 +18,8 @@ function createBubble(text) {                       // creates a popup bubble th
 }
 
 function createWarning(field, warning, limit) {      // pops up a message about excessive amount of accepted signs in a field
-     const box = document.getElementsByName(field)[0].value;
-     const textWarning1 = document.getElementById(warning);
+     const box = document.getElementsByName(field)[0].value,
+         textWarning1 = document.getElementById(warning);
      if (box.length > limit) {
          textWarning1.style.display = 'inline';
          textWarning1.innerHTML = 'This field cannot contain more than '+ limit + ' signs. Currently you have '+ (box.length-limit) + ' too many.';
