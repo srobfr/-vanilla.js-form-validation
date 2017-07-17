@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Grab your tickets today!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="chrome">
+    <div id="main">
+
+        <div id="headline">
+            <img src="img/logo.png">
+            <h1>WEEKEND PROMOTION</h1>
+            <span id="promo_text">PROMOTION ENDS:</span>
+            <span>20.03.2014, 12:00PM</span>
+        </div>
+        <div id="form_holder">
+            <form onsubmit="return validateForm()">
+                <div>
+                    <input type="radio" name="ticket" value=""> 1 TICKET €109
+                    <input type="radio" name="ticket" value="" id="last_ticket"> 5 TICKETS €495
+                </div>
+                <div>
+                <input type="text" value="first_name" name="first_name" class="form_field">
+                <input type="text" value="last_name" name="last_name" class="form_field">
+                </div>
+                <div>
+                    <span class="relative_holder">
+                        <span class="absolute_tooltip" id="text1_warning"> </span>
+                    </span>
+                    <textarea name="textarea_1" class="form_field" oninput="createWarning('textarea_1','text1_warning',10);">textarea_1</textarea>
+                    <span class="relative_holder">
+                        <span class="absolute_tooltip" id="text2_warning"></span>
+                    </span>
+                    <textarea name="textarea_2" class="form_field" oninput="createWarning('textarea_2','text2_warning',20);">textarea_2</textarea>
+                </div>
+                <div id="mail_password">
+                    <input type="text" name="email" value="email" class="form_field" >
+                    <input type="password" name="password" value="password" class="form_field" id="last_field" >
+                </div>
+                <div id="final_block">
+                    <span class="relative_holder">
+                        <span class="absolute_tooltip" id="vid_warning"> </span>
+                    </span>
+                    <input type="text" name="vid_number" value="vid_number" id="vid" oninput="createWarning('vid_number','vid_warning',5);">
+                    <input type="text" name="tickets_count" value="1" id="amount_box"> x Number of tickets
+                </div>
+                <div>
+                    <span class="relative_holder">
+                        <span class="absolute_tooltip" id="success"> </span>
+                    </span>
+                <input type="submit" value="REGISTER" id="submit_button">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="bubble_holder"></div>
+    </div>
+
+</div>
+
+<!-- build:js -->
+<script type="text/javascript" src="js/placeholders.js"></script>
+<script type="text/javascript" src="js/warnings.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript" src="js/tests.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
